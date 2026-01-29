@@ -1,0 +1,145 @@
+Day 1 (Monday): Cryptography + Hashing + Lab 1
+* Day 2 (Wednesday): Merkle Trees + Wallet logic + Labs 2 & 3
+* Day 3 (Friday): Consensus + Transaction lifecycle + Lab 4
+
+
+Topic 1: Cryptography – The Backbone of Blockchain
+What is Cryptography?
+Cryptography is the science of securing information so that only intended parties can read or modify it. 
+Blockchain relies on cryptography to replace trust in humans with trust in mathematics.
+Blockchain uses cryptography for:
+* Data integrity
+* Ownership verification
+* Transaction security
+* Identity without usernames/passwords
+
+Hash Functions
+A hash function converts input data of any size into a fixed-length output called a hash.
+Key Properties:
+* Deterministic (same input = same output)
+* One-way (cannot reverse-engineer input)
+* Avalanche effect (small change → big output change)
+Blockchain Usage:
+* Linking blocks
+* Detecting tampering
+* Creating transaction fingerprints
+
+Public & Private Key Cryptography
+Blockchain wallets use asymmetric cryptography:
+* Private Key: Secret key that proves ownership
+* Public Key: Derived from private key
+* Address: Shortened hash of public key
+Whoever controls the private key controls the assets.
+
+Digital Signatures
+Digital signatures prove:
+* Who sent the transaction
+* That the transaction was not altered
+Process:
+1. Transaction is created
+2. Signed using private key
+3. Verified using public key
+
+Topic 2: Merkle Trees – Data Integrity at Scale
+What is a Merkle Tree?
+A Merkle Tree is a hierarchical structure of hashes that efficiently summarizes large amounts of data.
+Used in:
+* Bitcoin blocks
+* Ethereum blocks
+* Distributed file systems
+
+Why Merkle Trees are Needed
+* Efficient verification
+* Reduced storage requirement
+* Faster synchronization between nodes
+A single transaction change modifies the Merkle root.
+
+Topic 3: Consensus Mechanisms
+Why Consensus is Required
+In a decentralized system, nodes must agree on:
+* Which transactions are valid
+* Which block is the latest
+This problem is known as the Byzantine Generals Problem.
+
+Proof of Work (PoW)
+* Miners compete to solve cryptographic puzzles
+* High energy consumption
+* Very secure
+Used by: Bitcoin
+
+Proof of Stake (PoS)
+* Validators are selected based on stake
+* Energy efficient
+* Faster finality
+Used by: Ethereum (after The Merge)
+
+Topic 4: Lifecycle of a Blockchain Transaction
+1. Transaction creation
+2. Transaction signing
+3. Broadcasting to network
+4. Block proposal
+5. Block validation
+6. Block confirmation & finality
+Transactions are not instant — they require consensus.
+
+PART B: PRACTICAL LAB MATERIAL (WORD FORMAT)
+
+LAB 1: Hashing & Immutability Experiment
+Objective
+To observe how blockchain achieves immutability using cryptographic hashing.
+Steps
+1. Enter text into a SHA-256 generator
+2. Generate hash
+3. Modify text slightly
+4. Generate hash again
+Observation
+Even a tiny change produces a completely different hash.
+Student Output
+* Screenshots
+* Explanation in own words
+
+LAB 2: Merkle Tree Construction
+Objective
+Understand how transactions are secured inside a block.
+Steps
+1. Create 4 sample transactions
+2. Hash each transaction
+3. Combine hashes step-by-step
+4. Identify Merkle root
+Observation
+Changing one transaction alters the Merkle root.
+
+LAB 3: Wallet & Key Ownership Demo
+Objective
+Understand how blockchain wallets work internally.
+Steps
+1. Create a test wallet
+2. Identify public address
+3. Understand private key importance
+Critical Rule
+Never share private keys.
+
+LAB 4: Proof of Work vs Proof of Stake Analysis
+Objective
+Compare consensus mechanisms using real blockchain data.
+Steps
+1. Observe Bitcoin block creation time
+2. Observe Ethereum block creation time
+3. Compare energy, speed, cost
+
+PART C: GITHUB ASSIGNMENT (MANDATORY)
+Students must create and commit the following files:
+* hashing.md
+* merkle-tree.md
+* wallet-cryptography.md
+* consensus-comparison.md
+Minimum 4 commits required.
+
+
+
+
+
+
+
+
+
