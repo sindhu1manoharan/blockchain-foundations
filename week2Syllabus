@@ -1,0 +1,72 @@
+WEEK 2 – THEORY SYLLABUS 
+Module 1: Cryptography Basics for Blockchain (FOUNDATION)
+Concepts to Cover
+What is Cryptography?
+Hash functions (Deep dive)
+Public Key & Private Key cryptography
+Digital signatures
+Why blockchain depends on cryptography
+Key Teaching Points
+Blockchain ≠ database, it’s crypto + networking
+Wallets do NOT store coins, they store private keys
+Whoever owns the private key owns the assets
+
+
+Module 2: Hashing & Merkle Trees (BLOCK STRUCTURE)
+Concepts to Cover
+SHA-256 (Bitcoin) & Keccak-256 (Ethereum)
+Properties of cryptographic hash functions
+Merkle tree structure
+Why Merkle trees are used in blocks
+Key Teaching Points
+One character change → completely different hash
+Merkle trees reduce verification cost
+Used to prove data integrity efficiently
+
+
+Module 3: Consensus Mechanisms (CORE OF DECENTRALIZATION)
+Concepts to Cover
+Why consensus is needed
+Byzantine Generals Problem
+Proof of Work (PoW)
+Proof of Stake (PoS)
+Ethereum’s transition (The Merge)
+Key Teaching Points
+Consensus = agreement without trust
+PoW secures with energy
+PoS secures with money (stake)
+
+
+
+Module 4: How a Block is Created (END-TO-END FLOW)
+Concepts to Cover
+Transaction creation
+Transaction broadcasting
+Block formation
+Block validation
+Block finalization
+Key Teaching Points
+Transactions are NOT instant
+Validators/miners decide block inclusion
+Finality matters in blockchain
+
+
+WEEK 2 – PRACTICAL LABS
+
+LAB 1: Hashing & Immutability Demo
+LAB 2: Merkle Tree Visualization
+LAB 3: Public–Private Key Demo
+LAB 4: Proof of Work vs Proof of Stake
+
+WEEK 2 – GITHUB STRUCTURE UPDATE
+
+blockchain-foundations/
+├── README.md
+├── hashing.md
+├── merkle-tree.md
+├── wallet-cryptography.md
+├── consensus-comparison.md
+└── diagrams/
+
+
+WEEK 2 – PRACTICAL LABS
